@@ -1,0 +1,46 @@
+Sandy Zhang
+My Outputs
+3/28/25
+
+[szhang39@wasp operating_system]$ g++ producer.cpp -pthread -lrt -o producer
+[szhang39@wasp operating_system]$ g++ consumer.cpp -pthread -lrt -o consumer
+[szhang39@wasp operating_system]$ ./producer & ./consumer
+[1] 858517
+Produced: 76
+Produced: 97
+Consumer: Buffer state: 76 97 
+Consumer: 97
+Consumer: Buffer state: 76 0 
+Consumer: 76
+Produced: 45
+Produced: 62
+Consumer: Buffer state: 45 62 
+Consumer: 62
+Consumer: Buffer state: 45 0 
+Consumer: 45
+Produced: 15
+Produced: 62
+Consumer: Buffer state: 15 62 
+Consumer: 62
+Consumer: Buffer state: 15 0 
+Consumer: 15
+
+[1] 873622
+Produced: 23
+Produced: 20
+Consumer: Buffer state: 23 20 
+Consumer: 20
+Consumer: Buffer state: 23 0 
+Consumer: 23
+Produced: 18
+Produced: 75
+Consumer: Buffer state: 18 75 
+Consumer: 75
+Consumer: Buffer state: 18 0 
+Consumer: 18
+Produced: 29
+Produced: 84
+Consumer: Buffer state: 29 84 
+Consumer: 84
+Consumer: Buffer state: 29 0 
+Consumer: 29
