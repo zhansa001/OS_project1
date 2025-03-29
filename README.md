@@ -25,5 +25,3 @@ g++ producer.cpp -pthread -lrt -o producer
 g++ consumer.cpp -pthread -lrt -o consumer
 
 ./producer & ./consumer
-
-It might fail the first time, but works for the second time.
